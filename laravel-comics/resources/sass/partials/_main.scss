@@ -1,0 +1,13 @@
+.container-home {
+    position: relative;
+    .text-container {
+        padding: $spacing $spacing*2;
+        background-color: $third-color;
+        width: fit-content;
+        transform: translate(-20%, -50%);
+        h1 {
+            color: $first-color;
+            margin: 0%;
+        }
+    }
+}
