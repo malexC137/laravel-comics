@@ -1,0 +1,14 @@
+.button-1 {
+    background-color: $third-color;
+    color: $first-color;
+    border: none;
+    padding: $spacing $spacing*4;
+    margin: $spacing*2 auto;
+}
+
+.button-2 {
+    background-color: transparent;
+    border: solid 2px $third-color;
+    color: $first-color;
+    padding: $spacing*2;
+}

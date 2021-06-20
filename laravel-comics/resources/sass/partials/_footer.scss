@@ -1,7 +1,63 @@
-.footer-top {
-    background-image: url('../../../public/images/footer-bg.jpg');
+footer {
+    background-image: url("/images/footer-bg.jpg");
     background-size: contain;
-    background-repeat: no-repeat;
     height: 600px;
-    width: 100%;
+    .container {
+        .footer-top {
+            display: flex;
+            .footer-top-left {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                padding-top: $spacing * 2;
+                .list-container {
+                    display: flex;
+                    padding: $spacing 0 $spacing*2 0;
+                    h2 {
+                        margin: $spacing 0 $spacing;
+                    }
+                    .column-footer {
+                        width: 25%;
+                    }
+                }
+                p {
+                    a {
+                        color: $third-color;
+                    }
+                }
+            }
+            .footer-top-right {
+                overflow: hidden;
+                img {
+                    transform: translateY(-5%);
+                    width: 100%;
+                }
+                width: 50%;
+            }
+        }
+    }
+    .footer-bot {
+        background-color: $fourth-color;
+        height: 160px;
+        transform: translateY(-40%);
+        .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            h2 {
+                color: $third-color;
+                margin-right: $spacing;
+            }
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: $fifth-color;
+            }
+        }
+    }
 }
