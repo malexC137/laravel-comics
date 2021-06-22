@@ -164,6 +164,10 @@ section {
      object-fit: cover;
 }
 
+.home-section .container-home .card-container .comic-card h4 {
+  color: #FFFFFF;
+}
+
 .nav-buy-home {
   background-color: #0382F9;
 }
@@ -201,7 +205,6 @@ main .blue-bar {
 }
 
 main .blue-bar .main-container .comics-card {
-  height: 300px;
   width: 200px;
   transform: translateY(-75%);
   border: solid 1px #FFFFFF;
@@ -210,9 +213,15 @@ main .blue-bar .main-container .comics-card {
   position: relative;
 }
 
+main .blue-bar .main-container .comics-card img {
+  width: 100%;
+}
+
 main .blue-bar .main-container .comics-card .comics-card-text-top {
   background-color: #00A9D9;
   width: 110px;
+  position: absolute;
+  top: 0;
 }
 
 main .blue-bar .main-container .comics-card .comics-card-text-bot {

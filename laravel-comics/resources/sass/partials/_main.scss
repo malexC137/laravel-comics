@@ -71,7 +71,7 @@ main {
         height: 100px;
         .main-container {
             .comics-card {
-                
+                width: 200px;
                 transform: translateY(-75%);
                 border: solid 1px $first-color;
                 color: $first-color;
@@ -84,14 +84,13 @@ main {
                     background-color: $sixth-color;
                     width: 110px;
                     position: absolute;
-                    
+                    top: 0;
                 }
                 .comics-card-text-bot {
                     background-color: $sixth-color;
                     width: 100%;
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    bottom: 0;
                 }
             }
         }
