@@ -26,6 +26,9 @@
                     height: 300px;
                     object-fit: cover;
                 }
+                h4 {
+                    color: $first-color;
+                }
             }
         }
     }
@@ -68,24 +71,27 @@ main {
         height: 100px;
         .main-container {
             .comics-card {
-                background-image: url("/images/superman-cover.jpeg");
-                background-size: contain;
-                height: 300px;
-                width: 200px;
+                
                 transform: translateY(-75%);
                 border: solid 1px $first-color;
                 color: $first-color;
                 text-align: center;
                 position: relative;
+                img{
+                    width: 100%;
+                }
                 .comics-card-text-top {
                     background-color: $sixth-color;
                     width: 110px;
+                    position: absolute;
+                    
                 }
                 .comics-card-text-bot {
                     background-color: $sixth-color;
                     width: 100%;
                     position: absolute;
-                    bottom: 0;
+                    top: 0;
+                    left: 0;
                 }
             }
         }

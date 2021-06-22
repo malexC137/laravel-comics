@@ -7,6 +7,7 @@
     <div class="blue-bar">
         <div class="main-container">
             <div class="comics-card upper">
+                <img src=" {{ $product['thumb'] }} " alt="">
                 <div class="comics-card-text-top">
                     <h3>comic book</h3>
                 </div>
@@ -19,11 +20,11 @@
     <div class="main-container">
         <section class="main-section">
             <div class="main-text-container">
-                <h1 class="upper">action comics #1000: the deluxe edition</h1>
+                <h1 class="upper">{{ $product['title']}}</h1>
                 <div class="shopping-bar">
                     <div class="shopping-bar-container">
                         <h5 class="text-green-op">U.S. Price:</h5>
-                        <h5 class="text-white">$19.99</h5>
+                        <h5 class="text-white"> {{ $product['price']}} </h5>
                     </div>
                     <div class="distancer"></div>
                     <div class="shopping-bar-container">
@@ -33,7 +34,7 @@
                         <h5>Check availability</h5><i class="fa fa-caret-down" aria-hidden="true"></i>
                     </div>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam neque quo, officia, enim pariatur repellendus quisquam illum atque id, ut iure quasi doloribus quis earum rem similique. Tempore, autem minima.</p>
+                <p>{{ $product['description']}}</p>
 
             </div>
             <div class="main-advertiser-container upper">
@@ -80,20 +81,20 @@
                 <tbody>
                     <tr>
                         <td>Series:</td>
-                        <td><a href="" class="upper">action comics</a></td>
+                        <td><a href="" class="upper"> {{ $product['series']}}  </a></td>
                     </tr>
                     <tr>
                         <td>U.S. Price:</td>
-                        <td>$19.99</td>
+                        <td>{{ $product['price']}} </td>
                     </tr>
                     <tr>
                         <td>On Sale Date:</td>
-                        <td>Oct 02 2018</td>
+                        <td> {{ $product['sale_date']}} </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
-    
+
 </main>
 @endsection

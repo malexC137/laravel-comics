@@ -201,8 +201,6 @@ main .blue-bar {
 }
 
 main .blue-bar .main-container .comics-card {
-  background-image: url("/images/superman-cover.jpeg");
-  background-size: contain;
   height: 300px;
   width: 200px;
   transform: translateY(-75%);

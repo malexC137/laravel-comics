@@ -26,8 +26,18 @@ Route::get('/characters', function () {
     return view("characters");
 })->name("characters-page");
 
-Route::get('/comics', function () {
-    return view("comics");
+Route::get('/comic/{index}', function ($index) {
+    $comicsData = config("comics");
+
+    if (!is_numeric($index) || $index < 0 || $index > count($comicsData) -1) {
+        abort(404, "Prodotto inesistente");
+    }
+
+    $userChoice = $comicsData[intval($index)];
+
+    return view("comics", [
+        "product" => $userChoice
+    ]);
 })->name("comics-page");
 
 Route::get('/movies', function () {

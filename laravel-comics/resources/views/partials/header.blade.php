@@ -18,11 +18,11 @@
                         Characters
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href=" {{ route('comics-page') }} ">
                         Comics
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href=" {{ route('movies-page') }} ">
                         Movies
