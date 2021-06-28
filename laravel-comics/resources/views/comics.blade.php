@@ -58,13 +58,17 @@
                     <tr>
                         <td id="data-left">Art by:</td>
                         <td>
-                            <a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a>
+                            @foreach($product['artists'] as $artistName)
+                            <a href=""> {{ $artistName }} </a>
+                            @endforeach
                         </td>
                     </tr>
                     <tr>
                         <td id="data-left">Written by:</td>
                         <td>
-                            <a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a><a href="">name surname, </a>
+                            @foreach($product['writers'] as $writerName)
+                            <a href=""> {{ $writerName }} </a>
+                            @endforeach
                         </td>
                     </tr>
                 </tbody>
@@ -81,7 +85,7 @@
                 <tbody>
                     <tr>
                         <td>Series:</td>
-                        <td><a href="" class="upper"> {{ $product['series']}}  </a></td>
+                        <td><a href="" class="upper"> {{ $product['series']}} </a></td>
                     </tr>
                     <tr>
                         <td>U.S. Price:</td>
